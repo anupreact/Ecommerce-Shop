@@ -109,7 +109,7 @@ const Home = () => {
           heading={"Featured Products"}
           btn={"Add To Cart"}
           data={productsData.slice(0, 8)}
-          value={"product"}
+          value={"product"} 
           qty={"yes"}
           viewBtn={true}
           filterOptions={false}
