@@ -103,7 +103,6 @@ const Home = () => {
         filterOptions={false}
 
       /> */}
-      <h1>Git test</h1>
       {/* 
         <Categories
           heading={"Featured Products"}
