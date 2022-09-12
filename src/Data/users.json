@@ -1,0 +1,12 @@
+{
+    "users":[
+        {
+            "email":"admin@wp.com",
+            "password":"admin@123"
+        },{
+           
+            "email":"admin@wp.com",
+            "password":"admin@123"  
+        }
+    ]
+}

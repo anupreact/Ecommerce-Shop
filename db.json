@@ -1,0 +1,226 @@
+{
+  "users": [
+    {
+      "email": "admin@wp.com",
+      "password": "pass123",
+      "confirmPassword": "pass123",
+      "id": 1,
+      "Name": "admin",
+      "address": "704, City Center 2 near sola bridge , Science City Road,  Ahmedabad, Gujarat, 345232.",
+      "orders": [
+        [
+          {
+            "title": "Music Instruments",
+            "id": 7,
+            "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+            "quantity": 3,
+            "price": 1299,
+            "prices": 3897
+          }
+        ],
+        {
+          "orders": [
+            [
+              {
+                "title": "Acoustic Guitar",
+                "id": 2,
+                "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+                "quantity": 1,
+                "price": 1299,
+                "prices": 1299
+              }
+            ],
+            {
+              "orders": [
+                [
+                  {
+                    "title": "Cricket Bat",
+                    "id": 1,
+                    "image": {
+                      "img1": "/static/media/shoe.6388c1ef53f2a698836b.png"
+                    },
+                    "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+                    "quantity": 2,
+                    "price": 1299,
+                    "prices": 2598
+                  },
+                  {
+                    "title": "Acoustic Guitar",
+                    "id": 2,
+                    "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+                    "quantity": 1,
+                    "price": 1299,
+                    "prices": 1299
+                  },
+                  {
+                    "title": "Music Instruments",
+                    "id": 7,
+                    "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+                    "quantity": 3,
+                    "price": 1299,
+                    "prices": 3897
+                  }
+                ],
+                {}
+              ]
+            }
+          ]
+        }
+      ],
+      "status": "Pending"
+    },
+    {
+      "email": "jon@gmail.com",
+      "password": "pass123",
+      "confirmPassword": "pass123",
+      "id": 3,
+      "Name": "jon snow",
+      "address": "704, City Center 2 near sola bridge , Science City Road,  Ahmedabad, Gujarat, 345232.",
+      "orders": [
+        {
+          "title": "Acoustic Guitar",
+          "id": 2,
+          "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+          "quantity": 1,
+          "price": 1299,
+          "prices": 1299
+        },
+        {
+          "title": "Electric Guitar",
+          "id": 3,
+          "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+          "quantity": 1,
+          "price": 1299,
+          "prices": 1299
+        },
+        {
+          "title": "Gym Instruments",
+          "id": 5,
+          "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+          "quantity": 1,
+          "price": 1299,
+          "prices": 1299
+        },
+        {
+          "title": "Music Instruments",
+          "id": 7,
+          "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+          "quantity": 1,
+          "price": 1299,
+          "prices": 1299
+        },
+        {
+          "orders": [
+            {
+              "title": "Sports Instruments",
+              "id": 6,
+              "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+              "quantity": 1,
+              "price": 1299,
+              "prices": 1299
+            },
+            {
+              "title": "Music Instruments",
+              "id": 7,
+              "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+              "quantity": 1,
+              "price": 1299,
+              "prices": 1299
+            },
+            [
+              {
+                "title": "Cricket Bat",
+                "id": 1,
+                "image": {
+                  "img1": "/static/media/shoe.6388c1ef53f2a698836b.png"
+                },
+                "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+                "quantity": 1,
+                "price": 1299,
+                "prices": 1299
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "email": "tyrion@gmail.com",
+      "password": "pass1234",
+      "confirmPassword": "pass1234",
+      "id": 4,
+      "Name": "Tyrion",
+      "address": "705, City Center 2 near sola bridge , Science City Road,  Ahmedabad, Gujarat, 345232.",
+      "orders": [
+        [
+          {
+            "title": "Acoustic Guitar",
+            "id": 2,
+            "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+            "quantity": 4,
+            "price": 1299,
+            "prices": 5196
+          }
+        ],
+        {
+          "orders": [
+            [
+              {
+                "title": "Cricket Bat",
+                "id": 1,
+                "image": {
+                  "img1": "/static/media/shoe.6388c1ef53f2a698836b.png"
+                },
+                "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+                "quantity": 2,
+                "price": 1299,
+                "prices": 2598
+              }
+            ],
+            {}
+          ]
+        }
+      ],
+      "status": "Pending"
+    },
+    {
+      "email": "brandon@gmail.com",
+      "password": "pass123",
+      "confirmPassword": "pass123",
+      "id": 5,
+      "Name": "Brandon",
+      "address": "704, City Center 2 near sola bridge , Science City Road,  Ahmedabad, Gujarat, 345232.",
+      "orders": [
+        [
+          {
+            "title": "Sports Instruments",
+            "id": 6,
+            "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+            "quantity": 1,
+            "price": 1299,
+            "prices": 1299
+          }
+        ],
+        {
+          "orders": [
+            [
+              {
+                "title": "Cricket Bat",
+                "id": 1,
+                "image": {
+                  "img1": "/static/media/shoe.6388c1ef53f2a698836b.png"
+                },
+                "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+                "quantity": 1,
+                "price": 1299,
+                "prices": 1299
+              }
+            ],
+            {}
+          ]
+        }
+      ],
+      "status": "Pending"
+    }
+  ]
+}

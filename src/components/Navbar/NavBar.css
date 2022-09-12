@@ -1,0 +1,187 @@
+.navbar {
+  background-color: #ffffff;
+  height: 3rem;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  color: #000000;
+  font-family: 'Rubik', sans-serif!important;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(138,138,138,1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(138,138,138,1);
+  box-shadow: 0px 1px 5px 0px rgba(138,138,138,1);
+}
+i{
+  color:black;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  /* max-width: 100%; */
+}
+.ecomlogo{
+
+  font-family: 'Bodoni Moda', serif;
+  /* font-family: 'Rubik', sans-serif; */
+}
+
+.nav-logo {
+  color: #f5b921;
+  align-items: center;
+  width:5rem;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  /* font-size: 2rem; */
+  /* flex-grow: 1; */
+}
+.nav-logo a {
+  margin-right: 1rem;
+  color: rgb(0, 0, 0);
+}
+.nav-logo a:hover {
+  color: rgb(26, 115, 217);
+
+}
+.nav-logo .active {
+  color: rgb(0, 162, 255);
+}
+.nav-links {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.1rem 0.3rem;
+  height: 100%;
+}
+
+.nav-links:hover {
+  color: rgb(26, 115, 217);
+}
+/* .nav-links .active{
+  
+} */
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+
+
+a.drop:hover {
+  color: rgb(34, 180, 248);
+}
+.fa-code {
+  margin-left: 1rem;
+  color:#000000
+}
+.nav-item {
+  line-height: 40px;
+  margin-right: 0.5rem;
+  padding: 0 !important;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+}
+
+.nav-item .active {
+  color: rgb(0, 162, 255);
+}
+
+.nav-icon {
+  display: none;
+}
+.hidden{
+  display: none;
+}
+.ecomlogo{
+  /* background: rgb(220, 162, 162); */
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 960px) {
+
+  .nav-container {
+    display:block;
+    color:black!important;
+  }
+  i{
+    color:rgb(255, 255, 255)!important;
+  }
+  .nav-icon i{
+    
+    color:black!important;
+  }
+
+
+  .ecomlogo{
+    margin-top: .5rem;
+    margin-left: .6rem;
+  
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: -110%;
+    height: 12rem;
+    opacity: 1;
+    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: start;
+    border-top: 1px solid white;
+  }
+  .hide{
+    display:none
+  }
+  .hidden{
+    display: block;
+  }
+
+  .nav-menu.active {
+    background: #194749;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: #40fff2; 
+  }
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    color:rgb(0, 0, 0);
+    /* display: block; */
+  }
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: -18px;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #ffdd40;
+  }
+}
