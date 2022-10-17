@@ -100,7 +100,6 @@ const Home = () => {
         data={categoryData}
         value={"product"}
         qty={"no"}
-        single={"no"}
       />
 
       <Products
@@ -112,19 +111,6 @@ const Home = () => {
         viewBtn={true}
         filterOptions={false}
       />
-
-      
-      {/* <motion.p style={{ scaleX: scrollYProgress, width: "500px" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fuga
-        incidunt adipisci. Ullam sit dicta nam blanditiis fugiat deserunt
-        obcaecati tempora doloremque excepturi cupiditate error similique
-        cumque, placeat hic! Rerum mollitia reiciendis dolorem error earum
-        temporibus eveniet ab molestias, quo minima, sed dolor nihil quaerat
-        accusamus, illum voluptate magnam facere tempora id nulla omnis aperiam
-        quam reprehenderit odio? Ut eligendi impedit reiciendis rerum doloribus
-        itaque, rem asperiores nobis ipsum! Animi, cum ducimus!
-      </motion.p> */}
-
       <Banner title={title2} desc={desc2} image={banner2} />
       <Testimonials data={testimonialsData} />
     </>
