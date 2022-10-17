@@ -18,7 +18,7 @@ const ProductsArray = () => {
   useEffect(() => {
     setIsLoading(true);
     dispatch(getAllProducts());
-    console.log("PRODUCTS PAGE RENDERRING");
+    // console.log("PRODUCTS PAGE RENDERRING");
 
     // setData(products);
     setTimeout(() => {

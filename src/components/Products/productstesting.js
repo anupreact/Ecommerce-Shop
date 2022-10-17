@@ -21,21 +21,21 @@ const Products = (props) => {
 
     
     <>
-      <div className="products-header">
+      <div classNameName="products-header">
         {heading ? (
-          <div className="left">{heading}</div>
+          <div classNameName="left">{heading}</div>
         ) : filterOptions == true ? (
           // {filterListing.map((items) => {
           //   return (
           //     <>
 
-          //     <div className="right">
+          //     <div classNameName="right">
           //     <button>View all</button>
           //      </div>
           //       <span
-          //         key={items.class}
-          //         id={items.class}
-          //         className={current == items.class ? "active" : null}
+          //         key={items.className}
+          //         id={items.className}
+          //         classNameName={current == items.className ? "active" : null}
           //         onClick={() => handleFilter(items)}
           //       >
           //         {" "}
@@ -52,7 +52,7 @@ const Products = (props) => {
         )}
 
         {viewBtn == true ? (
-          <div className="right">
+          <div classNameName="right">
             <button>View all</button>
           </div>
         ) : (
@@ -60,7 +60,7 @@ const Products = (props) => {
         )}
 
         {filter == true ? (
-          <div className="filterBtn">
+          <div classNameName="filterBtn">
             {/* <select name="filter" id="" onChange={(e) => handleSelect(e)}>
               <option value="All">All</option>
               <option value="Sports">Sports</option>
@@ -76,9 +76,9 @@ const Products = (props) => {
 
       {/*  start*/}
 
-      <div class="products-container">
-        <div class="products-wrapper">
-          <div class="cards-wrapper">
+      <div classNameName="products-container">
+        <div classNameName="products-wrapper">
+          <div classNameName="cards-wrapper">
 
 
           {/* treat this as a card */}
@@ -88,19 +88,19 @@ const Products = (props) => {
               const { id, image, title, description, price, category } = fItem;
               return(
 
-            <article class="actual-card">
-              <picture class="card-thumbnail">
+            <article className="actual-card">
+              <picture className="card-thumbnail">
                 <img
-                  class="card-img"
+                  className="card-img"
                   src={img1}
                   alt="Chocolate filled boller"
                 />
               </picture>
-              <div class="actual-card-content">
+              <div className="actual-card-content">
                 <div>{title}</div>
                 <div>Price : {price}</div>
               </div>
-              <div class="actual-card-btn">
+              <div className="actual-card-btn">
                 <button>add to cart</button>
               </div>
             </article>
@@ -114,8 +114,8 @@ const Products = (props) => {
         </div>
       </div>
 
-      <div className="products-footer">
-        <div className="view-more">
+      <div classNameName="products-footer">
+        <div classNameName="view-more">
           <button>View More</button>
         </div>
       </div>
@@ -129,19 +129,19 @@ export default Products;
 // {data.map((items) => {
 //     return (
 //       <>
-        // <div class="actual-card">
-        //   <picture class="card-thumbnail">
+        // <div className="actual-card">
+        //   <picture className="card-thumbnail">
         //     <img
-        //       class="card-img"
+        //       className="card-img"
         //       src={img1}
         //       alt="Chocolate filled boller"
         //     />
         //   </picture>
-        //   <div class="actual-card-content">
+        //   <div className="actual-card-content">
         //     <p>{items.title}</p>
         //     <div>Price : {items.price}/-</div>
         //   </div>
-        //   <div class="actual-card-btn">
+        //   <div className="actual-card-btn">
         //     <button>add to cart</button>
         //   </div>
         // </div>

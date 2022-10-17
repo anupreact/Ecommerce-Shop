@@ -32,24 +32,24 @@ const ProductComponent = (product) => {
   };
 
   useEffect(() => {
-    console.log("component renderring");
+    // console.log("component renderring");
   }, []);
 
   return (
-    <div class="actual-card">
-      <picture class="card-thumbnail">
+    <div className="actual-card">
+      <picture className="card-thumbnail">
         <NavLink to={`/product/${id}`}>
-          <img class="card-img" src={img1} alt="Chocolate filled boller" />
+          <img className="card-img" src={img1} alt="Chocolate filled boller" />
         </NavLink>
       </picture>
-      <div class="actual-card-content">
+      <div className="actual-card-content">
         {
           btn==="Explore" ? <p style={{display:"flex", justifyContent:"center"}}>{title}</p> : <p>{title}</p>
         }
 
         {btn === "Explore" ? "" : <div>Price : {price}/-</div>}
       </div>
-      <div class="actual-card-btn" style={{justifyContent:`${btn==="Explore" ? "center" : "start"}`}}>
+      <div className="actual-card-btn" style={{justifyContent:`${btn==="Explore" ? "center" : "start"}`}}>
         {qty === "yes" ? (
           <select 
             value={quantity}
