@@ -64,7 +64,7 @@ const CheckoutPage = () => {
       setJsonData(res.data);
     });
   };
-
+  // because the dependency is added update address is working properly
   useEffect(() => {
     fetchUsers();
   },[fetchedUser]);
