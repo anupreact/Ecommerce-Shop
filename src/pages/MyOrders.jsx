@@ -34,7 +34,7 @@ const MyOrders = () => {
   useEffect(() => {
     console.log(authUser);
     const fetchUsers = () => {
-      axios.get("http://localhost:5000/users").then((res) => {
+      axios.get("http://localhost:4000/users").then((res) => {
         // console.log(res.data);
         setJsonData(res.data);
       });

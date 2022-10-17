@@ -223,13 +223,13 @@ const Products = (props) => {
         </div>
       </div>
 
-      <div class="products-container">
-        <div class="products-wrapper">
+      <div className="products-container">
+        <div className="products-wrapper">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            class="cards-wrapper"
+            className="cards-wrapper"
           >
             {currentItem
               .filter((fItem) => {

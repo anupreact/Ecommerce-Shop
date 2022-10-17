@@ -30,7 +30,7 @@ const Product = (props) => {
   const getUser = localStorage.getItem("authUser");
 
   // data fetched from custom hook writen in useGetRequest file
-  const [fetched] = useGetRequest("http://localhost:5000/users");
+  const [fetched] = useGetRequest("http://localhost:4000/users");
 
   useEffect(() => {
     dispatch(getAllProducts());
@@ -88,8 +88,8 @@ const Product = (props) => {
               <div className="cards">
                 {pId ? (
                   <>
-                    <article class="card2 left-p">
-                      <picture class="thumbnail">
+                    <article className="card2 left-p">
+                      <picture className="thumbnail">
                         <img src={img1} alt="A banana that looks like a bird" />
                       </picture>
 
@@ -149,7 +149,7 @@ const Product = (props) => {
                       </div>
                     </article>
 
-                    <article class="card2 right-p">
+                    <article className="card2 right-p">
                       <div>
                         <h1>{pId.title}</h1>
                       </div>

@@ -55,7 +55,7 @@ const Acccount = (props) => {
   };
 
   const fetchUsers = () => {
-    axios.get("http://localhost:5000/users").then((res) => {
+    axios.get("http://localhost:4000/users").then((res) => {
       const data = res.data;
       setJsonData(data);
       // c(data);
@@ -69,7 +69,7 @@ const Acccount = (props) => {
   //LOGIN WORKING PROPERLY
 
   const PostUsers = () => {
-    axios.post(`http://localhost:5000/users`, state);
+    axios.post(`http://localhost:4000/users`, state);
     // .then(response =>   response.data.id);
   };
   const handleSubmit = (e, v) => {

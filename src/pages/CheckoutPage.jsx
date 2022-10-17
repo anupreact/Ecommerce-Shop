@@ -60,7 +60,7 @@ const CheckoutPage = () => {
   );
 
   const fetchUsers = () => {
-    axios.get("http://localhost:5000/users").then((res) => {
+    axios.get("http://localhost:4000/users").then((res) => {
       setJsonData(res.data);
     });
   };
@@ -111,7 +111,7 @@ const CheckoutPage = () => {
     e.preventDefault();
 
     axios
-      .put(`http://localhost:5000/users/${id}`, {
+      .put(`http://localhost:4000/users/${id}`, {
         email,
         password,
         confirmPassword,
@@ -187,7 +187,7 @@ const CheckoutPage = () => {
     const { id, ...rest } = userState;
     setAllOrders(rest.orders);
     if (id) {
-      axios.get(`http://localhost:5000/users/${id}`).then((res) => {
+      axios.get(`http://localhost:4000/users/${id}`).then((res) => {
         // setAllOrders(res.data.orders)
       });
     }
@@ -209,7 +209,7 @@ const CheckoutPage = () => {
 
 
     const getO = () => {
-      axios.get(`http://localhost:5000/users/${id}`).then((res) => {
+      axios.get(`http://localhost:4000/users/${id}`).then((res) => {
         setAllOrders(res.data.orders);
       });
     };
@@ -217,7 +217,7 @@ const CheckoutPage = () => {
 
     const postOrders = async () => {
       await axios
-        .put(`http://localhost:5000/users/${id}`, {
+        .put(`http://localhost:4000/users/${id}`, {
           email,
           password,
           confirmPassword,
@@ -225,7 +225,7 @@ const CheckoutPage = () => {
           image,
           Name,   
           address,
-          orders: [items , {orders}],
+          orders: [...items , ...orders],
           status:"Pending"
         })
         // .then((res) => c("res", res));

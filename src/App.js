@@ -29,11 +29,10 @@ import CheckoutPage from "./pages/CheckoutPage";
 import MyOrders from "./pages/MyOrders";
 import { allRoutes } from "./components/Routes";
 import { useEffect, useState } from "react";
-import NavTest from "./components/NavTest";
-import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./pages/NotFound";
 import UseEffectTest from "./pages/useEffectTest";
 import ProductsArray from "./pages/Products";
+import Navbar from "./components/Navbar/Navbar";
 // import "../node_modules/react-simple-navbar/src/lib/components/styles/index.css";
 
 function App() {
@@ -62,7 +61,6 @@ function App() {
     <>
       <ScrollToTop smooth />
 
-      {/* Hello comments */}
 
       {/* <div className="wrapper"> */}
       {/* <div className="container"> */}
@@ -70,9 +68,8 @@ function App() {
 
         <Router>
           {/* <Header /> */}
-          <Navbar />
 
-         
+         <Navbar/>
          
           <Routes>
           
