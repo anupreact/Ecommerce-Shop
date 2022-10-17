@@ -31,6 +31,7 @@ function Navbar() {
           label: (
             <a
               className="drop"
+              // href=" "
               onClick={() => {
                handleClick()
                 setLoginRedirect(true);
@@ -40,6 +41,7 @@ function Navbar() {
                   setLoginRedirect(false);
                 }, 1000);
               }}
+              rel=""
             >
               {/* <i class="fa fa-sign-out" aria-hidden="true"></i> */}
               <i
@@ -56,7 +58,7 @@ function Navbar() {
           label: (
              
             <NavLink activeclassname="active" className="drop" to="/orders" onClick={()=>handleClick()} >
-              <i class="fa fa-truck" aria-hidden="true"></i> My Orders
+              <i className="fa fa-truck" aria-hidden="true"></i> My Orders
             </NavLink>
           ),
           key: "1",
@@ -91,9 +93,13 @@ function Navbar() {
               SHOP
             </NavLink>
           </div>
+
+          <div className="centre">
+
           <NavLink to="/">
             <h2 className="ecomlogo">Ecommerce</h2>
           </NavLink>
+          </div>     
 
           <div className={click ? "nav-menu active" : "nav-menu"}>
             {/* <span>{authUser ? "hello auth" : "No Auth"}</span> */}

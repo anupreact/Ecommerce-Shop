@@ -3,7 +3,6 @@ import "./App.scss";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -33,6 +32,7 @@ import NotFound from "./pages/NotFound";
 import UseEffectTest from "./pages/useEffectTest";
 import ProductsArray from "./pages/Products";
 import Navbar from "./components/Navbar/Navbar";
+import ScrollTop from "./components/ScrollTop";
 // import "../node_modules/react-simple-navbar/src/lib/components/styles/index.css";
 
 function App() {
@@ -61,63 +61,26 @@ function App() {
     <>
       <ScrollToTop smooth />
 
+      <Router>
+        <Navbar />
+        <ScrollTop />
 
-      {/* <div className="wrapper"> */}
-      {/* <div className="container"> */}
-      {/* <Scrollbar className="scroll" rtl={false} style={{ width: "100vw", height: "100vh" }}> */}
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          {/* <Route exact path="/useEffect" element={<UseEffectTest />} /> */}
+          <Route path="/orders" element={<MyOrders />} />
+          <Route path="/products" element={<ProductsArray />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/product/:id" element={<Product />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/checkout" element={authUser ? <CheckoutPage /> : <Login />} />
+          <Route path="*" element={<NotFound />} />
+          {/* <Route path="/usecallback" element={<UseCallbackTest />} /> */}
+        </Routes>
 
-        <Router>
-          {/* <Header /> */}
-
-         <Navbar/>
-         
-          <Routes>
-          
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/useEffect" element={<UseEffectTest />} />
-            {/* <Route path="/orders" element={authUser ? <MyOrders /> : <Login />} /> */}
-            <Route path="/orders" element={<MyOrders />} />
-            <Route path="/products" element={<ProductsArray />} />
-            <Route path="/cart" element={<Cart />} />
-            {/* <Route path="/cart" element={authUser ? <Cart /> : <Login />} /> */}
-            <Route path="/product/:id" element={<Product />} />
-            {/* <Route path="/product/" element={<NotFound />} /> */}
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/login" element={<Login />} />
-            <Route
-              path="/checkout"
-              element={authUser ? <CheckoutPage /> : <Login />}
-            />
-            <Route path="*" element={<NotFound />} />
-
-            {/* <Route path="/checkout" element={<CheckoutPage />} /> */}
-
-            {/* <Route path="/services" element={<Services />} /> */}
-            {/* <Route path="/products" element={<Products />}>
-                  <Route path="/products/product" element={<Product />} />
-                </Route> */}
-
-            {/* <Route path="/contact" element={<Contact />} /> */}
-            {/* <Route path="/about" element={<About />} /> */}
-            {/* {authUser ? (
-                  <Route path="/login" element={<Home />} />
-                ) : (
-                  <Route path="/login" element={<Login />} />
-                )} */}
-            {/* <Route path="/test" element={<Test />} /> */}
-            {/* <Route path="/context" element={<Context />} /> */}
-            <Route path="/usecallback" element={<UseCallbackTest />} />
-          </Routes>
-
-          <Footer />
-        </Router>
-      {/* </Scrollbar> */}
-      {/* <BackTop>
-        <div style={style}>UP</div>
-      </BackTop> */}
-      {/* </div> */}
-      {/* </div> */}
-
+        <Footer />
+      </Router>
     </>
   );
 }

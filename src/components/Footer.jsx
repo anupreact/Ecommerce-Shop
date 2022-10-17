@@ -10,7 +10,7 @@ const Footer = () => {
         <section className="left">
         <div className="logo"><Link to="/">iNOX-PANDA</Link> </div>
 
-
+           
           <p>001 Main Street, Times building, London, New York</p>
           <div className="social-links">
             <span>
