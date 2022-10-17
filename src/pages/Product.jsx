@@ -10,7 +10,6 @@ import { useDeleteMessage } from "../components/Testing/Hooks/useDeleteMessage";
 import { useGetRequest } from "../components/Testing/Hooks/useGetRequest";
 import { useLoader } from "../components/Testing/Hooks/useLoader";
 import { productsData } from "../Data/SampleData";
-import img1 from "../images/cricket.png";
 import { Breadcrumb } from "antd";
 import ProductsArray from "./Products";
 import Products from "../components/Products/Products";

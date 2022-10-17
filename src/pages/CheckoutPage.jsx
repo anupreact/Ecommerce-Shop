@@ -67,7 +67,7 @@ const CheckoutPage = () => {
 
   useEffect(() => {
     fetchUsers();
-  }, [],[deliveryAddress]);
+  },[fetchedUser]);
 
 
 
