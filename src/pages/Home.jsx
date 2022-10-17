@@ -74,7 +74,7 @@ const Home = () => {
     <>
       {/* working */}
 
-      {/* <div>
+      <div>
         <Slider {...settings} style={{ color: "red" }}>
           <div>
             <img src={img5} style={contentStyle} />
@@ -89,37 +89,18 @@ const Home = () => {
             <img src={img8} style={contentStyle} />
           </div>
         </Slider>
-      </div> */}
-      {/* <br /> */}
-      {/* <Carousal /> */}
-      <Banner title={title1} desc={desc1} image={banner1} />
-      {/* <Categories
-        heading={"Featured Categories"}
-        btn={"Explore"}
-        data={categoryData}
-        value={"category"}
-        qty={"no"}
-        viewBtn={false}
-        filterOptions={false}
-
-      /> */}
-      {/* 
-        <Categories
-          heading={"Featured Products"}
-          btn={"Add To Cart"}
-          data={productsData.slice(0, 8)}
-          value={"product"} 
-          qty={"yes"}
-          viewBtn={true}
-          filterOptions={false}
-        />   */}
-
+      </div>
+      <br />
+      {/* <Banner title={title1} desc={desc1} image={banner1} /> */}
+     
+ 
       <Products
         heading={"Featured Categories"}
         btn={"Explore"}
         data={categoryData}
         value={"product"}
         qty={"no"}
+        single={"no"}
       />
 
       <Products
@@ -144,8 +125,8 @@ const Home = () => {
         itaque, rem asperiores nobis ipsum! Animi, cum ducimus!
       </motion.p> */}
 
-      {/* <Banner title={title2} desc={desc2} image={banner2} /> */}
-      {/* <Testimonials data={testimonialsData} /> */}
+      <Banner title={title2} desc={desc2} image={banner2} />
+      <Testimonials data={testimonialsData} />
     </>
   );
 };

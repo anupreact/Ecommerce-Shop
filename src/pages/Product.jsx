@@ -90,7 +90,7 @@ const Product = (props) => {
                   <>
                     <article className="card2 left-p">
                       <picture className="thumbnail">
-                        <img src={img1} alt="A banana that looks like a bird" />
+                        <img src={pId.image } alt="A banana that looks like a bird" />
                       </picture>
 
                       <div className="hidden-content">

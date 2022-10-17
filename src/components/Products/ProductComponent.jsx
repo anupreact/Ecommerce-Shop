@@ -38,8 +38,8 @@ const ProductComponent = (product) => {
   return (
     <div className="actual-card">
       <picture className="card-thumbnail">
-        <NavLink to={`/product/${id}`}>
-          <img className="card-img" src={img1} alt="Chocolate filled boller" />
+        <NavLink to={btn==="Add To Cart" ? `/product/${id}` : ""}>
+          <img className="card-img" src={image} alt="Chocolate filled boller" />
         </NavLink>
       </picture>
       <div className="actual-card-content">

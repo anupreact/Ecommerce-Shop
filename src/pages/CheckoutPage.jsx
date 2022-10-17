@@ -116,7 +116,7 @@ const CheckoutPage = () => {
         password,
         confirmPassword,
         Name,
-
+        orders:[],
         address:
           address + ", " + " " + city + ", " + state + ", " + pincode + ".",
       })
@@ -201,7 +201,7 @@ const CheckoutPage = () => {
       password,
       confirmPassword,
       id,
-      address,
+      address,  
       Name,
       image,
       orders,
