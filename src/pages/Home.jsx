@@ -40,8 +40,6 @@ const desc2 =
 var authorisedUser = localStorage.getItem("authUser");
 const Home = () => {
 
-
-  
   const { scrollYProgress } = useScroll();
 
   var settings = {
