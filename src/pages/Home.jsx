@@ -74,7 +74,7 @@ const Home = () => {
     <>
       {/* working */}
 
-      {/* <div>
+      <div>
         <Slider {...settings} style={{ color: "red" }}>
           <div>
             <img src={img5} style={contentStyle} />
@@ -89,10 +89,10 @@ const Home = () => {
             <img src={img8} style={contentStyle} />
           </div>
         </Slider>
-      </div> */}
+      </div>
       {/* <br /> */}
       {/* <Carousal /> */}
-      <Banner title={title1} desc={desc1} image={banner1} />
+      {/* <Banner title={title1} desc={desc1} image={banner1} /> */}
       {/* <Categories
         heading={"Featured Categories"}
         btn={"Explore"}
