@@ -64,18 +64,11 @@ const CheckoutPage = () => {
       setJsonData(res.data);
     });
   };
-  // because the dependency is added update address is working properly
-  useEffect(() => {
-    fetchUsers();
-  },[fetchedUser]);
 
 
-
-  
-
-  useEffect(() => {
+  useEffect(() => { 
     setFetchedUser(jsonData?.find((u) => u.email === JSON.parse(authUser)));
-  }, [jsonData]);
+  }, [jsonData,fetchedUser]);
 
   // console.log(fetchedUser)
 
@@ -107,7 +100,7 @@ const CheckoutPage = () => {
   //   ON-SUBMIT HANDLER
   const handleSubmit = (e, fetchedUser) => {
     console.log("running on every render")
-    const { email, password, confirmPassword, id, Name } = fetchedUser;
+    const { email, password, confirmPassword, id, Name  } = fetchedUser;
     e.preventDefault();
 
     axios
@@ -121,7 +114,6 @@ const CheckoutPage = () => {
           address + ", " + " " + city + ", " + state + ", " + pincode + ".",
       })
       .then((res) => c(res.data));
-
     if (
       (fName &&
         lName &&
@@ -134,6 +126,7 @@ const CheckoutPage = () => {
     ) {
       setFormState([...formState, formData]);
       openUpdateMessage("Updating" , "Address Updated Successfully")
+      
       setTimeout(() => {
         setFormData({
           fName: "",
@@ -147,6 +140,7 @@ const CheckoutPage = () => {
         });
       }, 1000);
       setTimeout(() => {
+        fetchUsers()
       }, 1000);
     } else {
       warning("Something went wrong", "Mandatory fields are Required");
@@ -267,9 +261,9 @@ const CheckoutPage = () => {
   };
   //   EMAIL JS FUNCTION
 
-  // useEffect(()=>{
-  //      fetchUsers();
-  // },[fetchedUser])
+  useEffect(()=>{
+       fetchUsers();
+  },[])
 
   return (
     <>
