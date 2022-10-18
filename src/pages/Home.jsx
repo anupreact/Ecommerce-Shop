@@ -73,7 +73,7 @@ const Home = () => {
   return (
     <>
       {/* working */}
-
+    <h2>Hello</h2>
       <div>
         <Slider {...settings} style={{ color: "red" }}>
           <div>
