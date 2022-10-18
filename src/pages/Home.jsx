@@ -93,7 +93,7 @@ const Home = () => {
       <br />
       {/* <Banner title={title1} desc={desc1} image={banner1} /> */}
      
-    <h3>Changes</h3>
+    <h3>Changes</h3>  
       <Products
         heading={"Featured Categories"}
         btn={"Explore"}
