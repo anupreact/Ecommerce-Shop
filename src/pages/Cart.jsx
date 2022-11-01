@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 
-import Card from "../components/Card";
 import Products from "./Products";
 import item from "../images/man4.png";
 import { useSelector, useDispatch } from "react-redux";
@@ -281,7 +280,7 @@ const Cart = () => {
                           width: "20%",
                         }}
                       >
-                        <img src={item} alt="" width={"100px"} />
+                        <img src={items.image} alt="" width={"100px"} />
                         <p>
                           {items.title} <br />
                           <span style={{ color: "gray", fontSize: "12px" }}>
