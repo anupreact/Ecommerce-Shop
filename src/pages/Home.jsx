@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Banner from "../components/Banner";
-import Categories from "../components/Categories";
 import img1 from "../images/cricket.png";
 import banner1 from "../images/banner1.png";
 import banner2 from "../images/shoe2.png";

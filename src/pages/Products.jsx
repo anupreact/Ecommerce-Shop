@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useState } from "react";
-import Categories from "../components/Categories";
 import { categoryData, productsData, usersData } from "../Data/SampleData";
 import { getAllProducts } from "../actions/productAction";
 import { useSelector, useDispatch } from "react-redux";

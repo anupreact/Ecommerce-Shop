@@ -112,7 +112,7 @@ const MyOrders = () => {
                     <div className="body">
                       <div className="item-wrapper">
                         <div className="left">
-                          <img src={cricket} alt="" />
+                          <img src={items.image} alt="" />
                         </div>
                         <div className="right">
                           <span>

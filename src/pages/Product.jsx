@@ -4,8 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { addToCart } from "../actions/cartActions";
 import { getAllProducts } from "../actions/productAction";
-import Card from "../components/Card";
-import Categories from "../components/Categories";
 import { useDeleteMessage } from "../components/Testing/Hooks/useDeleteMessage";
 import { useGetRequest } from "../components/Testing/Hooks/useGetRequest";
 import { useLoader } from "../components/Testing/Hooks/useLoader";
