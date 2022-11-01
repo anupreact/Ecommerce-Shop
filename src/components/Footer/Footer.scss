@@ -1,0 +1,170 @@
+footer {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    section {
+      margin: 0.4rem;
+      width: 20%;
+      .left,
+      .middle-1,
+      .middle-2 {
+        padding: 1rem;
+        width: 20%;
+      }
+    }
+    .pricing,
+    .company,
+    .newsletter {
+      padding: 0.4rem;
+    }
+    .left {
+      .logo {
+        a {
+        }
+      }
+      p {
+        color: rgb(48, 45, 45);
+        margin: 0.7rem 0px;
+        font-size: 14px;
+      }
+      .social-links {
+        display: flex;
+        justify-content: start;
+        span {
+          border-radius: 49px;
+          background: rgb(206, 212, 215);
+          cursor: pointer;
+          background: linear-gradient(
+            90deg,
+            rgba(206, 212, 215, 1) 0%,
+            rgba(52, 196, 220, 1) 0%,
+            rgba(32, 194, 221, 1) 0%,
+            rgba(0, 36, 33, 1) 100%
+          );
+          box-shadow: 5px 5px 10px #5a5a5a,
+            -5px -5px 10px rgba(255, 255, 255, 0.15);
+          margin: 0px 0.2rem;
+          height: 1.6rem;
+          width: 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.3s ease all;
+  
+          &:hover {
+            background: rgb(59, 169, 203);
+          }
+  
+          i {
+            color: #000000;
+          }
+        }
+      }
+    }
+    .middle-1 {
+      h4 {
+        margin: 0.4rem 0rem;
+        color: rgb(17, 18, 18);
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        span {
+          padding: 0.2rem;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 1.3rem;
+          cursor: pointer;
+          color: #5a5a5a;
+          transition: 0.3s all;
+          &:hover {
+            color: #232121;
+          }
+        }
+      }
+    }
+    .middle-2 {
+      h4 {
+        margin: 0.4rem 0rem;
+        color: rgb(17, 18, 18);
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        span {
+          padding: 0.2rem;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 1.3rem;
+          cursor: pointer;
+          color: #5a5a5a;
+          transition: 0.3s all;
+          &:hover {
+            color: #232121;
+          }
+        }
+      }
+    }
+    .right {
+      width: 30%;
+  
+      h4 {
+        margin: 0.4rem 0rem;
+        color: rgb(17, 18, 18);
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      p {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 13px;
+        margin: 0.7rem 0rem;
+        color: #5a5a5a;
+      }
+      .subscribe {
+        border: 1px solid black;
+        border-radius: 0.3rem;
+        display: flex;
+        justify-content: space-between;
+        input {
+          border-radius: 0.3rem;
+          border: none;
+          outline: none;
+          background: transparent;
+          padding: 0.4rem;
+        }
+      }
+      button {
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        color: white;
+        border: none;
+        background: rgb(206, 212, 215);
+        margin: 0.6rem 0rem;
+        background: linear-gradient(
+          90deg,
+          rgba(206, 212, 215, 1) 0%,
+          rgba(52, 196, 220, 1) 0%,
+          rgba(32, 194, 221, 1) 0%,
+          rgba(0, 36, 33, 1) 100%
+        );
+        transition: 0.3s all;
+        &:hover {
+          letter-spacing: 0.1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+  div.copyright {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 0.88rem;
+    color: #2a2929;
+    margin-bottom: 0.3rem;
+  }
+  

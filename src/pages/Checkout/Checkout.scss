@@ -1,0 +1,158 @@
+main {
+  &.checkout-wrapper {
+    padding: 1rem;
+
+    section {
+      padding: 0.5rem;
+      justify-content: space-around;
+      align-items: start;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+
+      .left {
+        padding: 0.5rem;
+        min-width: 15rem;
+
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 2;
+        margin: 0.1rem 0.5rem;
+      }
+
+      .right {
+        min-width: 15rem;
+        padding: 0.5rem;
+
+        background: rgb(246, 246, 246);
+        flex: 1;
+        margin: 0.1rem 0.5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        p {
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        h1 {
+          text-transform: uppercase;
+          font-weight: bold;
+          text-align: center;
+          border-bottom: 2px solid black;
+          background: rgb(74, 201, 243);
+          color: white;
+        }
+
+        h3 {
+          text-transform: uppercase;
+          font-weight: bold;
+          text-align: right;
+          margin-bottom: 1rem;
+        }
+
+        button {
+          border: none;
+          cursor: pointer;
+          background: rgb(208, 79, 79);
+          color: white;
+          font-weight: bold;
+          padding: 0.4rem;
+          width: 100%;
+          transition: 0.3s ease all;
+          text-transform: uppercase;
+
+          &:disabled {
+            cursor: not-allowed;
+          }
+
+          &.enabled {
+            background: rgb(35, 207, 195);
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.Login-container {
+    padding: 0px !important;
+  }
+}
+
+form.checkout-form {
+  padding: 0.3rem;
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+
+  div {
+    &:nth-child(2) input,
+    &:nth-child(3) input {
+      width: 94%;
+    }
+  }
+
+  > div {
+    margin-bottom: 0.3rem;
+    padding: 0.2rem;
+  }
+
+  input {
+    &[type="text"] {
+      width: 46%;
+      margin: 0.2rem 0.4rem;
+      border: 1px solid gray;
+      border-radius: 0.2rem;
+      padding: 0.3rem;
+      outline: none;
+
+      &::placeholder {
+        text-transform: capitalize;
+      }
+    }
+
+    &[type="checkbox"] {
+      width: 1.5rem;
+      height: 1.1rem;
+      margin-top: 0.3rem;
+    }
+  }
+
+  textarea {
+    margin-left: 0.4rem;
+    width: 94%;
+    padding: 0.3rem;
+  }
+
+  button {
+    margin-left: 0.4rem;
+    width: 94%;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    background: rgb(117, 189, 220);
+    color: rgb(41, 36, 36);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease all;
+
+    &:hover {
+      background: rgb(63, 187, 244);
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  input:focus,
+  textarea:focus {
+    border: 1px solid rgb(203, 82, 212);
+  }
+
+  button:disabled {
+    color: red;
+  }
+}

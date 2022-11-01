@@ -1,0 +1,93 @@
+.testimonial-content .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.3rem;
+  margin: 0rem 1rem;
+}
+
+main.featured .featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+main.featured section {
+  width: 22%;
+  height: auto;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-desc {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #226582;
+  // color: #ff1563;
+  font-size: 0.8rem;
+}
+
+.testimonial section {
+  border: 1px solid yellow;
+  border: 1px solid rgb(233, 13, 185);
+}
+
+.testimonial-content .heading p {
+  &:nth-child(1) {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: rgb(31, 30, 30);
+    letter-spacing: 0.2rem;
+    margin: 01rem 0rem;
+  }
+
+  &:nth-child(2) {
+    color: rgb(5, 56, 62);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &:nth-child(3) {
+    color: rgb(81, 83, 81);
+    margin-bottom: 1rem;
+    width: 80vw;
+  }
+}
+
+.testimonial-card {
+  .card-img {
+    padding: 0.2rem;
+  }
+
+  img {
+    background: rgb(240, 237, 237);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  .card-desc p {
+    line-height: 1.6rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px !important;
+  }
+}
+
+strong {
+  font-size: 2rem;
+}
+
+.testimonial-card {
+  h4 {
+    color: rgb(8, 105, 84);
+  }
+
+  span {
+    font-size: 0.7rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: #56595b;
+  }
+}

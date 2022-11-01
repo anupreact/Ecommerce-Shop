@@ -3,13 +3,8 @@ import "./App.scss";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Products from "./pages/Products";
-import Contact from "./pages/Contact";
-import About from "./pages/About";
-import Cart from "./pages/Cart";
+import Cart from "./pages/Cart/Cart";
 import Login from "./pages/Login";
 import Test from "./pages/Test";
 import "react-toastify/dist/ReactToastify.css";
@@ -23,9 +18,10 @@ import ScrollToTop from "react-scroll-to-top";
 import "antd/dist/antd.css";
 import { Button, Tooltip } from "antd";
 import { BackTop } from "antd";
-import Product from "./pages/Product";
-import CheckoutPage from "./pages/CheckoutPage";
-import MyOrders from "./pages/MyOrders";
+// import Product from "./pages/Product";
+import Product from "./pages/SingleProduct/Product";
+import CheckoutPage from "./pages/Checkout/CheckoutPage";
+import MyOrders from "./pages/Orders/MyOrders";
 import { allRoutes } from "./components/Routes";
 import { useEffect, useState } from "react";
 import NotFound from "./pages/NotFound";
@@ -33,13 +29,14 @@ import UseEffectTest from "./pages/useEffectTest";
 import ProductsArray from "./pages/Products";
 import Navbar from "./components/Navbar/Navbar";
 import ScrollTop from "./components/ScrollTop";
-// import "../node_modules/react-simple-navbar/src/lib/components/styles/index.css";
+
+import Footer from "./components/Footer/Footer"
 
 function App() {
   const [authUser, setAuthUser] = useState(localStorage.getItem({}));
-  const routeComponents = allRoutes.map((d, index) => {
-    return <Route key={index} exact path={d.path} element={<d.element />} />;
-  });
+  // const routeComponents = allRoutes.map((d, index) => {
+  //   return <Route key={index} exact path={d.path} element={<d.element />} />;
+  // });
 
   useEffect(() => {
     setAuthUser(localStorage.getItem("authUser"));
@@ -79,7 +76,9 @@ function App() {
           {/* <Route path="/usecallback" element={<UseCallbackTest />} /> */}
         </Routes>
 
-        <Footer />
+
+        <Footer/>
+
       </Router>
     </>
   );

@@ -106,6 +106,33 @@
       "address": "714, City Center 2 near sola bridge , Science City Road,  Ahmedabad, Gujarat, 345232.",
       "orders": [
         {
+          "title": "Acoustic Guitar",
+          "id": 2,
+          "image": "/static/media/music1.9e55218d375f564126de.png",
+          "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+          "quantity": 1,
+          "price": 1299,
+          "prices": 1299
+        },
+        {
+          "title": "Acoustic Guitar",
+          "id": 2,
+          "image": "/static/media/music1.9e55218d375f564126de.png",
+          "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+          "quantity": 1,
+          "price": 1299,
+          "prices": 1299
+        },
+        {
+          "title": "Electric Guitar",
+          "id": 3,
+          "image": "/static/media/electric-guitar.761ba839b5a013569123.png",
+          "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+          "quantity": 1,
+          "price": 1299,
+          "prices": 1299
+        },
+        {
           "title": "Tennis Racket",
           "id": 6,
           "image": "/static/media/tennis.3b1d7b576ce35cc7b11c.png",
@@ -186,16 +213,43 @@
     },
     {
       "email": "test@gmail.com",
-      "password": "1234",
-      "confirmPassword": "1234",
-      "id": 7,
+      "password": "pass123",
+      "confirmPassword": "pass123",
+      "id": 8,
       "Name": "Test",
-      "address": "710, City Center 2 near sola bridge , Science City Road,  Ahmedabad, Gujarat, 345232.",
+      "address": "7034 City Center 2 near sola bridge , Science City Road,  Ahmedabad, Gujarat, 345232.",
       "orders": [
+        {
+          "title": "Cricket Bat",
+          "id": 1,
+          "image": "/static/media/bat.9354373f4333a3870df1.png",
+          "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+          "quantity": 1,
+          "price": 1299,
+          "prices": 1299
+        },
+        {
+          "title": "Acoustic Guitar",
+          "id": 2,
+          "image": "/static/media/music1.9e55218d375f564126de.png",
+          "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+          "quantity": 1,
+          "price": 1299,
+          "prices": 1299
+        },
         {
           "title": "Electric Guitar",
           "id": 3,
           "image": "/static/media/electric-guitar.761ba839b5a013569123.png",
+          "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
+          "quantity": 1,
+          "price": 1299,
+          "prices": 1299
+        },
+        {
+          "title": "Drum Set",
+          "id": 11,
+          "image": "/static/media/set.8fcbebcfd4e742fbc898.png",
           "description": "We are having wide variety Musical Instruments from acoustic guitars to tablas",
           "quantity": 1,
           "price": 1299,

@@ -2,14 +2,15 @@ import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Button, Form, Input, Select, Space, Tooltip, Typography } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import emailjs from "emailjs-com";
-import { addToCart, clearCart, deleteFromCart } from "../actions/cartActions";
-import { useDeleteMessage } from "../components/Testing/Hooks/useDeleteMessage";
+import { addToCart, clearCart, deleteFromCart } from "../../actions/cartActions";
+import { useDeleteMessage } from "../../components/Testing/Hooks/useDeleteMessage";
 import { Result } from "antd";
 import { NavLink } from "react-router-dom";
-import { useWarningModal } from "../components/Testing/Hooks/useWarningModal";
-import { addOrders } from "../actions/orderActions";
+import { useWarningModal } from "../../components/Testing/Hooks/useWarningModal";
+import { addOrders } from "../../actions/orderActions";
 import axios from "axios";
 import cors from "cors";
+import "./Checkout.scss"
 
 const { Option } = Select;
 

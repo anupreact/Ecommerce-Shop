@@ -5,8 +5,9 @@ import axios from "axios";
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import cricket from "../../src/images/cricket.png";
-import Login from "./Login";
+// import cricket from "../../src/images/cricket.png";
+import Login from "../Login";
+import "./MyOrders.scss"
 
 
 const MyOrders = () => {

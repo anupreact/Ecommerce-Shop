@@ -1,0 +1,85 @@
+.Login-container .Account {
+    height: auto;
+    min-width: 20rem;
+    max-width: 30rem;
+    min-height: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  .Account .heading {
+    margin: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+  
+  .content .Account-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Account-form {
+    input {
+      border: 1px solid gray;
+      outline: none;
+      margin: 1rem;
+  
+      padding: 0.6rem 1rem;
+      background: transparent;
+      max-width: 20rem;
+      width: 18.6rem;
+  
+      &::placeholder {
+        color: rgb(49, 50, 50);
+      }
+  
+      &:focus {
+        border: 1px solid rgb(0, 217, 255);
+      }
+    }
+  
+    button {
+      font-size: 16px;
+      letter-spacing: 0.09rem;
+      border: none;
+  
+      padding: 0.4rem;
+      background: rgb(0, 0, 0);
+      color: rgb(228, 228, 228);
+      transition: 0.1s ease all;
+      max-width: 20rem;
+      width: 18.6rem;
+      margin: 1rem;
+  
+      &:hover {
+        letter-spacing: 0.2rem;
+        color: rgb(255, 255, 255);
+        background: rgb(39, 179, 230);
+      }
+    }
+  
+    p {
+      font-size: 15px !important;
+      color: #606568;
+      font-weight: normal;
+      text-align: center;
+      box-sizing: border-box;
+      margin: 0rem 1rem;
+  
+      span {
+        a {
+          color: rgb(76, 0, 255);
+          transition: 0.3s sec ease all;
+        }
+  
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  

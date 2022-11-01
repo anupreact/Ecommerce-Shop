@@ -1,9 +1,9 @@
 import React from "react";
-import Acccount from "../components/Acccount";
+import Account from "../components/Account/Account";
 
 const Signup = () => {
   return (
-    <Acccount
+    <Account
       btnValue={"Register"}
       cPassword={true}
       fName={true}
