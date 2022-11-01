@@ -2,15 +2,22 @@ import { Skeleton } from "antd";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Navigate, useParams } from "react-router-dom";
-import { addToCart } from "../actions/cartActions";
-import { getAllProducts } from "../actions/productAction";
-import { useDeleteMessage } from "../components/Testing/Hooks/useDeleteMessage";
-import { useGetRequest } from "../components/Testing/Hooks/useGetRequest";
-import { useLoader } from "../components/Testing/Hooks/useLoader";
-import { productsData } from "../Data/SampleData";
+import { addToCart } from "../../actions/cartActions";
+// import { getAllProducts } from "../actions/productAction";
+import { getAllProducts } from "../../actions/productAction";
+
+
+import { useDeleteMessage } from "../../components/Testing/Hooks/useDeleteMessage";
+import { useGetRequest } from "../../components/Testing/Hooks/useGetRequest";
+// import { useLoader } from "../components/Testing/Hooks/useLoader";
+import { useLoader } from "../../components/Testing/Hooks/useLoader";
+import { productsData } from "../../Data/SampleData";
 import { Breadcrumb } from "antd";
-import ProductsArray from "./Products";
-import Products from "../components/Products/Products";
+// import ProductsArray from "./Products";
+import ProductsArray from "../Products";
+import Products from "../../components/Products/Products";
+
+import "./Product.scss"
 
 // "address": "109 , city club new-york , america 23454,  New York, New York, 123323.",
 

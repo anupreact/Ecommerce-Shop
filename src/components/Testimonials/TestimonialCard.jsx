@@ -1,5 +1,6 @@
 import React from "react";
-import avatar from '../images/man4.png'
+// import avatar from '../images/man4.png'
+import avatar from '../../images/man4.png'
 
 const TestimonialCard = (props) => {
     const {id ,name , post , message } = props

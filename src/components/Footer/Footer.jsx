@@ -1,16 +1,17 @@
 import React from "react";
-import { Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import "./Footer.scss";
 
 const Footer = () => {
   return (
-    // <!-- FOOTER SECTION -->
     <>
-        <hr />
+      <hr />
       <footer className="foot">
         <section className="left">
-        <div className="logo"><Link to="/">iNOX-PANDA</Link> </div>
+          <div className="logo">
+            <Link to="/">iNOX-PANDA</Link>{" "}
+          </div>
 
-           
           <p>001 Main Street, Times building, London, New York</p>
           <div className="social-links">
             <span>
@@ -66,12 +67,10 @@ const Footer = () => {
           <button className="subs-btn">Subscribe</button>
         </section>
       </footer>
-    <div className="copyright" >
-      <p >
-        Copyright 2022 @all Rights reserved | Designed with ❤ by | Anup{" "}
-      </p>
 
-    </div>
+      <div className="copyright">
+        <p>Copyright 2022 @all Rights reserved | Designed with ❤ by | Anup </p>
+      </div>
     </>
   );
 };

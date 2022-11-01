@@ -1,11 +1,8 @@
-// service_wn68p1a
-
 import React, { useState, useEffect } from "react";
-
-import Products from "./Products";
-import item from "../images/man4.png";
+import Products from "../Products";
+// import item from "../images/man4.png";
 import { useSelector, useDispatch } from "react-redux";
-import { addToCart, clearCart, deleteFromCart } from "../actions/cartActions";
+import { addToCart, clearCart, deleteFromCart } from "../../actions/cartActions";
 // import SendSMS from 'react-native-send-sms';
 import { LoadingOutlined } from "@ant-design/icons";
 import { Breadcrumb, Spin } from "antd";
@@ -16,15 +13,16 @@ import { Modal } from "antd";
 import { Result } from "antd";
 import { Skeleton } from "antd";
 import emailjs from "emailjs-com";
-import settingsLoader from "../images/Settings.gif";
-import tdloader from "../images/loader.gif";
+// import settingsLoader from "../images/Settings.gif";
+// import tdloader from "../images/loader.gif";
 
 import { Link, NavLink } from "react-router-dom";
-import { useDeleteMessage } from "../components/Testing/Hooks/useDeleteMessage";
-import { useWarningModal } from "../components/Testing/Hooks/useWarningModal";
-import Pagination from "../components/Pagination";
-import Login from "./Login";
+import { useDeleteMessage } from "../../components/Testing/Hooks/useDeleteMessage";
+import { useWarningModal } from "../../components/Testing/Hooks/useWarningModal";
+import Pagination from "../../components/Pagination";
+import Login from "../Login";
 // import { SMTPClient } from 'emailjs';
+import "./Cart.scss"
 
 const key = "updatable";
 

@@ -1,5 +1,7 @@
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
+// import TestimonialCard from "./TestimonialCard";
+import "./Testimonials.scss"
 
 const Testimonials = (props) => {
   const { data } = props;
