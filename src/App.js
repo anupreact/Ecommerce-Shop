@@ -1,5 +1,4 @@
 import "./App.scss";
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -8,18 +7,14 @@ import Cart from "./pages/Cart/Cart";
 import Login from "./pages/Login/Login";
 import Test from "./pages/Test";
 import "react-toastify/dist/ReactToastify.css";
-// import Signup from "./pages/Signup";
 import Signup from "./pages/Signup/Signup";
 import Context from "./pages/ContextAPI/Context";
 import UseCallbackTest from "./pages/UseCallbackTest";
 import { Scrollbar } from "react-scrollbars-custom";
-// import ScrollToTop from "./components/ScrollToTop";
 import ScrollToTop from "react-scroll-to-top";
-// import 'antd/dist/antd.css';
 import "antd/dist/antd.css";
 import { Button, Tooltip } from "antd";
 import { BackTop } from "antd";
-// import Product from "./pages/Product";
 import Product from "./pages/SingleProduct/Product";
 import CheckoutPage from "./pages/Checkout/CheckoutPage";
 import MyOrders from "./pages/Orders/MyOrders";
@@ -43,17 +38,6 @@ function App() {
     setAuthUser(localStorage.getItem("authUser"));
   }, []);
 
-  const style = {
-    height: 40,
-    width: 40,
-    lineHeight: "40px",
-    borderRadius: 4,
-    backgroundColor: "#1088e9",
-    color: "#fff",
-    textAlign: "center",
-    fontSize: 14,
-    zIndex: "100",
-  };
 
   return (
     <>
