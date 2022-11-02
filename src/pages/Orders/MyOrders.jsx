@@ -6,7 +6,8 @@ import React, { useEffect, useLayoutEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 // import cricket from "../../src/images/cricket.png";
-import Login from "../Login";
+// import Login from "../Login";
+import Login from "../Login/Login";
 import "./MyOrders.scss"
 
 
