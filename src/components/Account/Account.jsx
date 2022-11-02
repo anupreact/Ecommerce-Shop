@@ -2,18 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import { registerUser } from "../actions/userActions";
 import { registerUser } from "../../actions/userActions";
 import { useSelector, useDispatch } from "react-redux";
 import { Button, Modal, Space } from "antd";
-// import { useWarningModal } from "./Testing/Hooks/useWarningModal";
 import { useWarningModal } from "../Testing/Hooks/useWarningModal";
-// import { users } from "./Testing/file1";
 import { users } from "../Testing/file1";
 import axios from "axios";
-// import { login, logout } from "../actions/loginActions";
 import { login, logout } from "../../actions/loginActions";
-// import { useToastMessage } from "./Testing/Hooks/useToastMessage";
 import { useToastMessage } from "../Testing/Hooks/useToastMessage";
 import "./Account.scss"
 
@@ -39,7 +34,6 @@ const Acccount = (props) => {
 
   const [loginRedirect, setLoginRedirect] = useState(false);
   const [registerRedirect, setRegisterRedirect] = useState(false);
-  //   const [first, setfirst] = useState(second);
   const [formData, setFormData] = useState([]);
   const [jsonData, setJsonData] = useState([]);
   const [state, setState] = useState({
