@@ -20,7 +20,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useDeleteMessage } from "../../components/Testing/Hooks/useDeleteMessage";
 import { useWarningModal } from "../../components/Testing/Hooks/useWarningModal";
 import Pagination from "../../components/Pagination";
-import Login from "../Login";
+import Login from "../Login/Login";
 // import { SMTPClient } from 'emailjs';
 import "./Cart.scss"
 

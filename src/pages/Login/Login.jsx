@@ -1,6 +1,6 @@
 import React from "react";
 // import Acccount from "../components/Acccount";
-import Account from "../components/Account/Account";
+import Account from "../../components/Account/Account";
 
 const Login = () => {
   return (

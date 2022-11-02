@@ -39,61 +39,6 @@ a {
 .ScrollbarsCustom-ThumbX {
   display: none !important;
 }
-/**************************************************** SCROLL TO TOP BUTTON  ********************************************************/
-
-.top-to-btm {
-  position: relative;
-}
-
-.icon-position {
-  position: fixed;
-  bottom: 40px;
-  right: 25px;
-  z-index: 20;
-}
-
-.icon-style {
-  background-color: #551b54;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  color: #fff;
-  cursor: pointer;
-  animation: movebtn 3s ease-in-out infinite;
-  transition: all 0.5s ease-in-out;
-
-  &:hover {
-    animation: none;
-    background: #fff;
-    color: #551b54;
-    border: 2px solid #551b54;
-  }
-}
-
-@keyframes movebtn {
-  0% {
-    transform: translateY(0px);
-  }
-
-  25% {
-    transform: translateY(20px);
-  }
-
-  50% {
-    transform: translateY(0px);
-  }
-
-  75% {
-    transform: translateY(-20px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-/*************************************************** SCROLL TO TOP BUTTON  ********************************************************/
 
 header,
 main,
@@ -102,148 +47,22 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-/******************************************************** HEADER ********************************************************/
-
-header {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-  box-shadow: none !important;
-  border: none;
-  border-radius: 0px;
-  min-height: 50px;
-  padding: 0px 2rem;
-  position: sticky;
-  top: -2px;
-  z-index: 100;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgb(0, 0, 0);
-
-  .logo {
-    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
-      0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-      0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-      0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-      0 20px 20px rgba(0, 0, 0, 0.15), 40px 40px 19px rgba(48, 39, 158, 0.29);
-  }
-}
-
-footer .logo {
-  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
-    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-    0 20px 20px rgba(0, 0, 0, 0.15), 40px 40px 19px rgba(48, 39, 158, 0.29);
-}
-
-header {
-  span {
-    margin: 0.5rem;
-
-    transition: 0.3s ease all;
-  }
-
-  a {
-    color: rgb(255, 255, 255);
-    letter-spacing: 0.07rem;
-    font-size: 1rem;
-  }
-
-  span:hover {
-    cursor: pointer;
-    color: rgb(122, 122, 122);
-    color: rgb(55, 255, 255);
-  }
-}
-
-.nav-links .active {
-  color: rgb(55, 255, 255);
-
-  /* border-bottom: 1px solid rgb(24, 237, 237); */
-}
-
-.right-nav .active {
-  color: rgb(25, 244, 255) !important;
-}
-
-.h-btn {
-  font-size: 1rem;
-
-  /* font-weight: bold; */
-  background: #69dfe8;
-  background: -moz-linear-gradient(left, #35add9 0%, #5d9ea4 0%, #71bec5 100%);
-  background: -webkit-linear-gradient(
-    left,
-    #6cddf9 0%,
-    #5da3a4 0%,
-    #0c96d5 100%
-  );
-  background: linear-gradient(to right, #6ea9ce 0%, #3db5e5 0%, #09a09d 100%);
-}
-
-.right-nav {
-  width: 10rem;
-  height: 2rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-
-  i {
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    transition: 0.1s ease all;
-
-    &:hover {
-      color: rgb(102, 205, 246);
-      font-size: 19px;
-    }
-
-    b {
-      position: absolute;
-      width: 1rem;
-      height: 1rem;
-      bottom: 1rem;
-      color: rgb(102, 205, 246);
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-      left: 1.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-    }
-  }
-}
-
-/******************************************************** HEADER ********************************************************/
-
-/* Main Banner section */
-
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  section {
+    margin: 0.7rem;
+    width: 47%;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
 }
-
-/******************************************************** MAIN SECTION ********************************************************/
-
-main section {
-  margin: 0.7rem;
-  width: 47%;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-/******************************************************** MAIN SECTION ********************************************************/
 
 /********************************************************* PAGINATION *********************************************************/
 
@@ -285,24 +104,6 @@ ul.pagination {
 }
 
 /********************************************************* PAGINATION *********************************************************/
-
-/******************************************************** FEATURED CATEGORIES ********************************************************/
-/* toast div */
-
-.toastdiv {
-  text-align: center;
-  padding: 0.3rem;
-  margin: 1rem auto;
-  width: 16rem;
-  color: rgb(255, 255, 255);
-  background: rgb(15, 162, 173);
-  position: sticky;
-  top: 5rem;
-  z-index: 1;
-}
-/* toast div */
-
-/******************************************************** FEATURED CATEGORIES *************************************************/
 
 /******************************************************** PRODUCTS CATEGORIES *************************************************/
 
@@ -361,12 +162,6 @@ ul.pagination {
   height: 789px !important;
 }
 
-.rsis-container {
-  width: 1250px !important;
-}
-
-.pgbtn {
-}
 
 /******************************************************** MEDIA QUERIES ********************************************************/
 
@@ -494,7 +289,6 @@ ul.pagination {
 
   /*************************************** ORDERS PAGE ***************************************/
 }
-
 /* SINGLE PRODUCT PAGE MEDIA QUERIES */
 
 @media screen and (min-width: 60em) {

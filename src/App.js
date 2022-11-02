@@ -5,10 +5,11 @@ import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart/Cart";
-import Login from "./pages/Login";
+import Login from "./pages/Login/Login";
 import Test from "./pages/Test";
 import "react-toastify/dist/ReactToastify.css";
-import Signup from "./pages/Signup";
+// import Signup from "./pages/Signup";
+import Signup from "./pages/Signup/Signup";
 import Context from "./pages/ContextAPI/Context";
 import UseCallbackTest from "./pages/UseCallbackTest";
 import { Scrollbar } from "react-scrollbars-custom";
@@ -28,7 +29,7 @@ import NotFound from "./pages/NotFound";
 import UseEffectTest from "./pages/useEffectTest";
 import ProductsArray from "./pages/Products";
 import Navbar from "./components/Navbar/Navbar";
-import ScrollTop from "./components/ScrollTop";
+import ScrollTop from "./components/Scroll/ScrollTop";
 
 import Footer from "./components/Footer/Footer"
 
